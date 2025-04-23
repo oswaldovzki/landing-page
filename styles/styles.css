@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Outfit", sans-serif;
   background-color: #262B3A;
 }
 
@@ -44,7 +44,7 @@ body {
   padding: 0.3rem 0.5rem;
 }
 .header .lista-menu .lista-menu__item .header__nav__link {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Cinzel Decorative", sans-serif;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
   border-left: solid 2px transparent;
@@ -61,7 +61,7 @@ body {
   gap: 1rem;
   padding-right: 2rem;
   font-size: 1.5rem;
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Cinzel Decorative", sans-serif;
 }
 .header .lista-menu.show {
   display: block;
@@ -87,7 +87,7 @@ body {
     margin-left: 3rem;
   }
   .header .lista-menu .lista-menu__item .header__nav__link {
-    font-family: "Chakra Petch", sans-serif;
+    font-family: "Cinzel Decorative", sans-serif;
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
     border-left: none;
@@ -132,7 +132,7 @@ body {
 .main .main__conteudo .main__conteudo__titulo {
   font-size: 2rem;
   font-weight: 500;
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Cinzel Decorative", sans-serif;
   text-align: center;
 }
 @media screen and (min-width: 1440px) {
@@ -238,7 +238,7 @@ body {
 .about .about__conteudo .titulo__h2 {
   font-size: 4rem;
   font-weight: 500;
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Cinzel Decorative", sans-serif;
   text-align: center;
 }
 .about .about__conteudo .about__conteudo__texto {
@@ -327,11 +327,11 @@ body {
 .cv .cv__conteudo .titulo__h2 {
   font-size: 4rem;
   font-weight: 500;
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Cinzel Decorative", sans-serif;
   text-align: center;
 }
 .cv .cv__conteudo .cv__conteudo__subtitulo {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Cinzel Decorative", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   align-self: center;
@@ -441,7 +441,7 @@ body {
 .project .titulo__h2 {
   font-size: 4rem;
   font-weight: 500;
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Cinzel Decorative", sans-serif;
   text-align: center;
 }
 .project .project__group .project__list {
@@ -557,7 +557,7 @@ body {
     pointer-events: none;
     background-color: #FFC099;
     color: #492f1d;
-    font-family: "Oswald", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-size: 0.9rem;
     font-weight: 400;
     padding: 0.5rem;
@@ -593,7 +593,7 @@ body {
 .contact__container .titulo__h2 {
   font-size: 4rem;
   font-weight: 500;
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Cinzel Decorative", sans-serif;
   text-align: center;
 }
 .contact__container .contact {
@@ -702,7 +702,7 @@ body {
 
 .footer {
   font-size: 1rem;
-  font-family: "Oswald", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 400;
   text-align: center;
   background-color: #E6D6BB;
