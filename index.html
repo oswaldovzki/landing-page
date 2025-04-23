@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    
+    <meta name="description" content="Meu portifólio de Projetos e trabalhos em Web Design">
+    <meta name="keywords" content="HTML, CSS, SASS, JavaScript">
+    <meta name="author" content="Filipe Lima">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/favicon/site.webmanifest">
+    
+    <script src="./scripts/hamburguer-menu.js" defer></script>
+    <script src="./scripts/projects.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript" defer></script>
+    <script src="https://kit.fontawesome.com/5033a35e06.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <title>Filipe "oswaldovzki" Lima</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <button type="button" id="toggleBtn" class="header_mobile_btn">
+            <img class="header_mobile_btn_logo" src="./assets/img/oswaldovzki_logo_art_half.jpg" alt="Menu">
+        </button>
+        <ul class="lista-menu" id="mobileMenu">
+            <li class="lista-menu__item"><a href="#main" class="header__nav__link">Home</a></li>
+            <li class="lista-menu__item"><a href="#about-title" class="header__nav__link">Sobre mim</a></li>
+            <li class="lista-menu__item"><a href="#cv-title" class="header__nav__link">Carreira</a></li>
+            <li class="lista-menu__item"><a href="#project-list" class="header__nav__link">Projetos</a></li>
+            <li class="lista-menu__item"><a href="#contact" class="header__nav__link">Contato</a></li>
+            <li class="lista-menu__item"><a href="https://cursos.alura.com.br/vitrinedev/oswaldovzki" class="header__nav__link" target="_blank" rel="noopener noreferrer">Vitrine Dev</a></li>
+        </ul>
+        <div class="header__nav__title">
+            <span class="header__nav__link">Home</span>
+            <span class="header__nav__link fa fa-home"></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <section class="main__conteudo" id="main">
+                <h1 class="main__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo__destaque">com um
+                        <span class="front__end">Front-end</span> de qualidade!</strong></h1>
+                <p class="main__conteudo__texto">Olá! Sou Filipe Lima, desenvolvedor Front-end com especialidade em
+                    <strong class="titulo__destaque">HTML</strong> e <strong class="titulo__destaque">CSS</strong>.
+                    Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?
+                </p>
+                <div class="main__links">
+                    <h2 class="main__botao__subt">Acesse minhas redes</h2>
+                    <a class="main__botao__text" class="main__botao__inst" href="https://www.instagram.com/oswaldovzki/ "
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="social" src="./assets/icons/instagram.svg" alt="">
+                        Instagram</a>
+                    <a class="main__botao__text" href="https://www.linkedin.com/in/ofilipelima/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="social" src="./assets/icons/linkedin.svg" alt="">
+                        LinkedIn</a>
+                    <a class="main__botao__text" href="https://github.com/oswaldovzki" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="social" src="./assets/icons/github.svg" alt="">
+                        GitHub</a>
+                </div>
+            </section>
+            <img class="minha__foto" src="./assets/img/guy-coding-dragons.png" alt="">
+        </div>
+    
+        <div class="about">
+            <section class="about__conteudo">
+                <h2 class="titulo__h2" id="about-title">Sobre mim</h2>
+                <p class="about__conteudo__texto">
+                    Olá! Sou Filipe, Casado, Mineiro, curto Heavy Metal e Video Games.
+                    <br>
+                    <br>
+                    Me Graduei em Ciências Biológicas, com Bacharelado e Licenciatura, pela Universidade Federal de Ouro Preto, onde também conquistei meu mestrado em Ensino de Ciências.
+                    <br>
+                    <br>
+                    Há alguns anos realizei uma transição de carreira, integrando a Stilingue, uma empresa que destaca-se pela NLP brasileira e Social Listening. Inicialmente, contribuí para o Atendimento ao Cliente antes de transitar para a área de Quality Assurance. Desempenhei um papel significativo na criação do time de Atendimento N2, responsável pela gestão de tickets de suporte técnico e relatórios de bugs, assegurando a manutenção e aderência aos processos internos para garantir um atendimento ao cliente ágil e eficaz. Atualmente atuo como analista de Governança de TI, aplicando meus conhecimentos em processos e análise de dados para fornecer melhorias na jornada do cliente.
+                </p>
+            </section>
+        </div>
+    
+        <div class="cv">    
+            <section class="cv__conteudo">
+                <h2 class="titulo__h2" id="cv-title">
+                    Carreira
+                </h2>
+                <h3 class="cv__conteudo__subtitulo exp">Experiências</h3>
+                <ul class="cv__conteudo__experiência">
+                    <li>
+                        <span class="cv__conteudo__experiência--ent">Pismo (2024 - Atual)</span>
+                        <p>Analista de Governança de TI</p>
+                    </li>
+                    <li>
+                        <span class="cv__conteudo__experiência--ent">Blip (2023 - 2024)</span>
+                        <p>Analista de Suporte Técnico</p>
+                    </li>
+                    <li>
+                        <span class="cv__conteudo__experiência--ent">Varsity Tutors (2023 - 2023)</span>
+                        <p>Especialista de Suporte Técnico</p>
+                    </li>
+                    <li>
+                        <span class="cv__conteudo__experiência--ent">Stilingue (2019 - 2023)</span>
+                        <p>Analista de Suporte Técnico (2021 - 2023)</p>
+                        <p>Analista de Quality Assurance (2020 - 2021)</p>
+                        <p>Analista de Atendimento ao Cliente (2019 - 2020)</p>
+                    </li>
+                </ul>
+                <hr>
+                <h3 class="cv__conteudo__subtitulo certificados">Certificações</h3>
+                 <ul class="cv__conteudo__cursos">
+                        <li>
+                            <div>HTML</div>
+                            <a rel="noopener" target="_blank" href="https://cursos.alura.com.br/user/oswaldovzki/degree-html-css-v527396-527396/certificate">Alura Cursos com certificado</a>
+                        </li>
+                        <li>
+                            <div>CSS</div>
+                            <a rel="noopener" target="_blank" href="https://cursos.alura.com.br/user/oswaldovzki/degree-css-estilos-v671897-671897/certificate">Alura Cursos com certificado</a>
+                        </li>
+                        <li>
+                            <div>JavaScript</div>
+                            <a rel="noopener" target="_blank" href="linkdocertificado">Alura Cursos com certificado</a>
+                        </li>
+                        <li class="certification_full">
+                            <a rel="noopener" target="_blank" href="https://cursos.alura.com.br/user/oswaldovzki/fullCertificate/70c35dea02b345e12c388fc9730cc015">🎓 Certificação completa 🎓</a>
+                        </li>
+                    </ul>
+            </section>
+        </div>
+        
+        <div class="project">
+            <h2 class="titulo__h2" id="project-list">
+                Projetos
+            </h2>
+            <span class="project__group">
+                <section class="project__list">
+                    <div class="project__container active" id="jsApps">
+                        <img class="project__container__icon" src="./assets/icons/menu-hamburguer-aberto.svg" alt="">
+                        <p class="projetc__container__name">javaScript Apps</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/jsapps/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="jsAppsInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Aplicações em JavaScript.
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="project__container" id="alurabooks">
+                        <img class="project__container__icon" src="./projects/alura-books/assets/logo.png" alt="">
+                        <p class="projetc__container__name">Alura Books</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/alura-books/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="alurabooksInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Site de venda de livros de Tecnologia, com menu hamburguer, caixa de busca, sessão 'swipe' e
+                                outros elementos. <br>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="project__container" id="aluraplay">
+                        <img class="project__container__icon" src="./projects/alura-play/assets/favicon.ico" alt="">
+                        <p class="projetc__container__name">Alura Play</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/alura-play/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="alurabooksInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Site de armazenamento de Vídeos de Tecnologia, com funcionalidade de adição de novos videos e busca por texto. <br>
+                                    Tecnologias usadas: HTML, CSS e JS.
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="project__container" id="aluraplus">
+                        <img class="project__container__icon" src="./projects/alura-plus/assets/Logo.svg" alt="">
+                        <p class="projetc__container__name">Alura+</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/alura-plus/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="alurabooksInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Landing Page de uma plataforma de Stremaing.<br>
+                                    Tecnologias usadas: HTML, CSS e JS (swipe).
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="project__container" id="optimustech">
+                        <img class="project__container__icon" src="./projects/optimus-tech/assets/logo.png" alt="">
+                        <p class="projetc__container__name">Optimus Tech</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/optimus-tech/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="alurabooksInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Página de divulgação de vagas em uma empresa de tecnologia e cadastro de curriculos.<br>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="project__container" id="aluramed">
+                        <img class="project__container__icon" src="./projects/aluramed/assets/logo.png" alt="">
+                        <p class="projetc__container__name">AluraMed</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/aluramed/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="aluramedInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Página de consultas de uma clínica fictícia.<br>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="project__container" id="wavecast">
+                        <img class="project__container__icon" src="./projects/wavecast/assets/imagens/Logos/Favicon.svg" alt="">
+                        <p class="projetc__container__name">Wavecast</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/wavecast/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="wavecastInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Página de podcasts.<br>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="project__container" id="spotify-imersao">
+                        <img class="project__container__icon" src="./projects/spotify-imersao/src/assets/icons/logo.png" alt="">
+                        <p class="projetc__container__name">Spotify Clone</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/spotify-imersao/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="spotifyInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Página clone do Spotfy, Desenvolvido em uma imersão da Alura.<br>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="project__container" id="uploader">
+                        <img class="project__container__icon" src="./projects/uploader/img/Logo.svg" alt="">
+                        <p class="projetc__container__name">File Uploader</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/uploader/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="spotifyInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Aplicação de uma página de upload de arquivos.<br>
+                                    Tecnologias usadas: HTML, CSS e JavaScript.
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="project__container" id="CalmariaSpa">
+                        <img class="project__container__icon" src="./projects/CalmariaSpa/assets/logo_icon.png" alt="">
+                        <p class="projetc__container__name">Calmaria Spa</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/CalmariaSpa/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="CalmariaSpaInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Landing page de uma empresa fictícia de SPA.<br>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="project__container" id="culturama">
+                        <img class="project__container__icon" src="./projects/culturama/assets/img/Favicon2.png" alt="">
+                        <p class="projetc__container__name">Culturama</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/culturama/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="culturamaInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Página de divulgação de eventos.<br>
+                                    Tecnologias usadas: HTML e CSS.
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="project__container" id="watchlist">
+                        <img class="project__container__icon" src="./projects/watchlist/assets/favicon.svg" alt="">
+                        <p class="projetc__container__name">Watchlist</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/watchlist/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="watchlistInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Página para busca de filmes.<br>
+                                    Tecnologias usadas: HTML, CSS e JS.
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="project__container" id="oswBank">
+                        <img class="project__container__icon" src="./projects/oswbank/img/cartao-credito.png" alt="">
+                        <p class="projetc__container__name">Banco do Oswaldo</p>
+                        <div class="projetc__container__info">
+                            <a class="icons fa-solid fa-arrow-up-right-from-square" href="./projects/oswbank/index.html"  target="_blank"></a>
+                            <i class="icons fa-solid fa-circle-info" id="oswBankInfo">
+                                <span class="projetc__container__info__tooltip">
+                                    Aplicação de cadastro e envio de formulários, com exemplo de um banco.
+                                    Tecnologias usadas: HTML, CSS e JavaScript.
+                                </span>
+                        </i>
+                        </div>
+                    </div>
+            </span>
+            </section>
+    
+            <section class="project__frame">
+                <div class="project__square">
+                    <!-- <div class="project__title__container">
+                        <p class="project__square__title">JavaScript Apps</p>
+                        <a class="projetc__square__site" href="./projects/jsapps/index.html"  target="_blank">🌐</a>
+                    </div> -->
+                    <iframe class="project__square__preview" title="Aplicativos em JavaScript" src="./projects/jsapps/index.html"></iframe>
+                </div>
+            </section>
+            
+        </div>
+    
+        <div class="contact__container">
+            <h2 class="titulo__h2">Contato</h2>
+            <section class="contact" id="contact">
+                <p>WhatsApp: <a href="https://api.whatsapp.com/send?phone=553195117017" target="_blank" rel="noopener">+55 31 9511-7017</a></p>
+                <p>E-mail: support@anduin-webworks.atlassian.net</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/ofilipelima/" target="_blank" rel="noopener">/in/ofilipelima/</a></p>
+                <button type="button" class="submit-btn btn-disable" id="openform">Enviar uma Mensagem</button>
+            </section>
+        </div>
+        
+        <div class="contact-modal contact-modal-hide">
+            <form class="js-form">
+                <i class="fa-solid fa-square-xmark xmark"></i>
+                <label for="name">
+                    Nome
+                    <input class="form-field js-field" id="name" maxlength="120" name="name" required type="text">
+                </label>
+                <label for="email">
+                    E-mail
+                    <input class="form-field js-field" id="email" maxlength="120" name="email" required type="email">
+                </label>
+                <label for="message">
+                    Mensagem
+                    <textarea class="form-field js-field message" id="message" name="message" rows="3" required type="text"></textarea>
+                </label>
+                <button disabled="true" class="submit-btn" type="submit" id="submit-btn">Enviar</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">
+            Desenvolvido por @oswaldovzki
+        </p>
+    </footer>
+  
+    <script data-jsd-embedded data-key="d91a1892-b8e5-458f-8917-5ce6aeb2f01b" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
+
+</body>

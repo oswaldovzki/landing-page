@@ -1,0 +1,752 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #FBF1EB;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #262B3A;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1A1E28;
+}
+.header .header_mobile_btn {
+  outline: none;
+  border: none;
+  background: transparent;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.header .header_mobile_btn_logo {
+  width: 4rem;
+  border-radius: 999px;
+}
+.header .lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60%;
+  background-color: #1A1E28;
+}
+.header .lista-menu .lista-menu__item {
+  padding: 0.3rem 0.5rem;
+}
+.header .lista-menu .lista-menu__item .header__nav__link {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  border-left: solid 2px transparent;
+  padding-left: 0.6rem;
+  transition: border 400ms;
+}
+.header .lista-menu .lista-menu__item .header__nav__link:hover {
+  border-left: solid 2px #FFC099;
+  transition-timing-function: ease;
+}
+.header .header__nav__title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+.header .lista-menu.show {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+  }
+  .header .header__nav__title {
+    display: none;
+  }
+  .header .header_mobile_btn {
+    display: block;
+  }
+  .header .lista-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    text-wrap: nowrap;
+    gap: 1rem;
+    width: 100%;
+    margin-left: 3rem;
+  }
+  .header .lista-menu .lista-menu__item .header__nav__link {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    border-left: none;
+    padding-left: 0;
+    border-bottom: solid 2px transparent;
+    padding-bottom: 0.6rem;
+    transition: border 400ms;
+  }
+  .header .lista-menu .lista-menu__item .header__nav__link:hover {
+    border-left: none;
+    border-bottom: solid 2px #FFC099;
+    transition-timing-function: ease;
+  }
+  .header .lista-menu .lista-menu__item:first-child {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header .lista-menu {
+    gap: 2rem;
+    margin-left: 5rem;
+  }
+  .header .lista-menu .lista-menu__item:first-child {
+    display: block;
+  }
+}
+
+.main {
+  margin: 6rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 2rem;
+}
+.main .main__conteudo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+.main .main__conteudo .main__conteudo__titulo {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .main .main__conteudo .main__conteudo__titulo {
+    font-size: 3rem;
+  }
+}
+.main .main__conteudo .main__conteudo__texto {
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  padding-left: 0.625rem;
+}
+.main .main__conteudo .main__links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.main .main__conteudo .main__links .main__botao__subt {
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  align-self: center;
+}
+.main .main__conteudo .main__links .main__botao__text {
+  align-self: center;
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid #FFC099;
+  width: 100%;
+  text-align: center;
+  padding: 21.5px 0px;
+  text-decoration: none;
+  color: #FBF1EB;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.main .main__conteudo .main__links .main__botao__text .social {
+  height: 30px;
+}
+.main .minha__foto {
+  width: 60%;
+}
+@media screen and (min-width: 1280px) {
+  .main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10rem;
+  }
+  .main .main__conteudo {
+    justify-content: center;
+    align-items: center;
+  }
+  .main .main__conteudo__titulo {
+    font-size: 3.5rem;
+  }
+  .main .main__conteudo__texto {
+    font-size: 1.8rem;
+  }
+  .main .main__conteudo .main__links {
+    width: 100%;
+  }
+  .main .main__conteudo .main__links .main__botao__subt {
+    font-size: 1.8rem;
+  }
+  .main .main__conteudo .main__links .main__botao__text {
+    font-size: 1.6rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #FFC099;
+    width: 70%;
+    text-align: center;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: #FBF1EB;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .main .minha__foto {
+    width: 50%;
+  }
+}
+
+.about {
+  margin: 6rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 2rem;
+}
+.about .about__conteudo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.about .about__conteudo .titulo__h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+}
+.about .about__conteudo .about__conteudo__texto {
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+}
+.about .about__conteudo .about__links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.about .about__conteudo .about__links .about__botao__subt {
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  align-self: center;
+}
+.about .about__conteudo .about__links .about__botao__text {
+  align-self: center;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid #FFC099;
+  width: 70%;
+  text-align: center;
+  padding: 21.5px 0px;
+  text-decoration: none;
+  color: #FBF1EB;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+@media screen and (min-width: 1440px) {
+  .about {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10rem;
+  }
+  .about .about__conteudo {
+    justify-content: center;
+    align-items: center;
+    padding: 5% 4rem 0 4rem;
+  }
+  .about .about__conteudo__titulo {
+    font-size: 2.5rem;
+  }
+  .about .about__conteudo__texto {
+    font-size: 1.8rem;
+  }
+  .about .about__conteudo .about__links {
+    width: 100%;
+  }
+  .about .about__conteudo .about__links .about__botao__subt {
+    font-size: 1.8rem;
+  }
+  .about .about__conteudo .about__links .about__botao__text {
+    font-size: 1.6rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #FFC099;
+    width: 70%;
+    text-align: center;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: #FBF1EB;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.contact__container {
+  margin: 2rem 0;
+}
+
+.cv {
+  margin: 6rem 1rem 0 1rem;
+}
+.cv .cv__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.cv .cv__conteudo .titulo__h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+}
+.cv .cv__conteudo .cv__conteudo__subtitulo {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  align-self: center;
+}
+.cv .cv__conteudo .cv__conteudo__experiência {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cv .cv__conteudo .cv__conteudo__experiência li {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.cv .cv__conteudo .cv__conteudo__experiência li .cv__conteudo__experiência--ent {
+  color: #E6D6BB;
+}
+.cv .cv__conteudo .cv__conteudo__experiência li p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.cv .cv__conteudo .cv__conteudo__cursos {
+  height: 100%;
+}
+.cv .cv__conteudo .cv__conteudo__cursos li {
+  letter-spacing: 0.05rem;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+.cv .cv__conteudo .cv__conteudo__cursos li div {
+  color: #E6D6BB;
+}
+.cv .cv__conteudo .cv__conteudo__cursos li a {
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+.cv .cv__conteudo .cv__links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+@media screen and (min-width: 1440px) {
+  .cv {
+    margin-bottom: 6rem;
+  }
+  .cv .cv__conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    align-items: center;
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+    row-gap: 1rem;
+    padding: 0 3%;
+  }
+  .cv .cv__conteudo hr {
+    display: none;
+  }
+  .cv .cv__conteudo .titulo__h2 {
+    grid-area: 1/1/2/3;
+  }
+  .cv .cv__conteudo .cv__conteudo__subtitulo {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .cv .cv__conteudo .exp {
+    grid-area: 2/1/3/2;
+  }
+  .cv .cv__conteudo .cv__conteudo__experiência {
+    grid-area: 3/1/4/2;
+  }
+  .cv .cv__conteudo .cv__conteudo__experiência li {
+    padding-bottom: 2.5rem;
+    letter-spacing: 0.15rem;
+    font-size: 2.5rem;
+  }
+  .cv .cv__conteudo .cv__conteudo__experiência li p {
+    font-weight: 300;
+    font-size: 1.8rem;
+  }
+  .cv .cv__conteudo .certificados {
+    grid-area: 2/2/3/3;
+  }
+  .cv .cv__conteudo .cv__conteudo__cursos {
+    grid-area: 3/2/4/3;
+  }
+  .cv .cv__conteudo .cv__conteudo__cursos li {
+    font-size: 2.5rem;
+  }
+  .cv .cv__conteudo .cv__conteudo__cursos li a {
+    font-size: 1.8rem;
+  }
+  .cv .cv__conteudo .cv__links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+}
+
+.project {
+  margin: 6rem 1rem 0 1rem;
+}
+.project .titulo__h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+}
+.project .project__group .project__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.25rem;
+  overflow: auto;
+}
+.project .project__group .active {
+  border-bottom: solid 2px #FBF1EB;
+  border-radius: 0.5rem;
+}
+.project .project__group .project__container {
+  padding: 0.25rem;
+  margin-bottom: 0.25rem;
+  cursor: pointer;
+}
+.project .project__group .project__container:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 192, 153, 0.3764705882));
+  border-radius: 0.5rem;
+}
+.project .project__group .project__container .project__container__icon {
+  border-radius: 1rem;
+  border: solid 1px #FBF1EB;
+  height: 32px;
+  width: 32px;
+}
+.project .project__group .project__container .projetc__container__name {
+  display: none;
+}
+.project .project__group .project__container .projetc__container__info {
+  display: none;
+}
+.project .project__group .project__container .projetc__container__info .icons {
+  margin: 3px;
+}
+.project .project__group .project__frame .project__square {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 98%;
+}
+.project .project__group .project__frame .project__square .project__title__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 0 1rem 0;
+}
+.project .project__group .project__frame .project__square .project__title__container .project__square__title {
+  font-size: 1.5rem;
+}
+.project .project__group .project__frame .project__square .project__square__preview {
+  height: 650px;
+}
+
+@media screen and (min-width: 768px) {
+  .project__list {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .active {
+    border: 2px solid #FBF1EB;
+    background-color: rgba(255, 192, 153, 0.3764705882);
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+  .project .titulo__h2 {
+    margin-bottom: 3rem;
+  }
+  .project .project__group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .project .project__group .project__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: auto;
+  }
+  .project .project__group .project__list .project__container {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #FBF1EB;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+  }
+  .project .project__group .project__list .project__container .projetc__container__name {
+    display: block;
+    font-size: 1.5rem;
+    padding-bottom: 0.3rem;
+  }
+  .project .project__group .project__list .project__container .projetc__container__info {
+    display: block;
+    font-size: 1.2rem;
+    color: #E6D6BB;
+  }
+  .project .project__group .project__list .project__container .projetc__container__info:hover .projetc__container__info__tooltip {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    background-color: #FFC099;
+    color: #492f1d;
+    font-family: "Oswald", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 15rem;
+  }
+  .project .project__group .project__list .project__container .projetc__container__info .projetc__container__info__tooltip {
+    display: none;
+    pointer-events: none;
+  }
+  .project .project__frame {
+    flex: 1;
+  }
+  .project .project__frame .project__square {
+    width: 100%;
+  }
+  .project .project__frame .project__square .project__title__container {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 1rem;
+    justify-content: center;
+  }
+  .project .project__frame .project__square .project__title__container .projetc__square__site {
+    font-size: 1.5rem;
+  }
+  .project .project__frame .project__square {
+    align-items: flex-end;
+  }
+  .project .project__frame .project__square .project__square__preview {
+    max-width: 95%;
+    width: 100%;
+  }
+}
+.contact__container .titulo__h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+}
+.contact__container .contact {
+  font-weight: 300;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.contact__container .contact a:hover {
+  color: #E6D6BB;
+}
+.contact__container .submit-btn {
+  margin: 1rem;
+  width: 60%;
+  max-width: 240px;
+  margin: 1.5rem auto;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  border: solid 1px;
+  border-radius: 1rem;
+  background: linear-gradient(217deg, #614e8b, rgba(181, 162, 162, 0) 70.71%), linear-gradient(127deg, #b85416, rgba(64, 107, 64, 0) 70.71%), linear-gradient(336deg, #2b3652, rgba(44, 44, 147, 0) 70.71%);
+  text-shadow: 1px 1px 2px #2b3652;
+}
+.contact__container .btn-disable {
+  background: none;
+  cursor: not-allowed;
+}
+
+@media screen and (min-width: 1440px) {
+  .contact__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
+  }
+  .contact__container .contact {
+    font-size: 1.25rem;
+    line-height: 150%;
+  }
+  .contact__container .submit-btn {
+    font-size: 1.25rem;
+  }
+}
+.contact-modal-hide {
+  display: none;
+}
+
+.contact-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18rem;
+  height: 16rem;
+  background-color: white;
+  padding: 1.3rem;
+  border: 1px solid black;
+  box-shadow: 10px 10px 5px #888888;
+  font-size: 1.2rem;
+}
+
+.js-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.js-form .xmark {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  color: #ff0000;
+  cursor: pointer;
+}
+.js-form .xmark:hover {
+  color: #e80000;
+}
+.js-form .xmark:active {
+  color: #000000;
+}
+.js-form label {
+  color: #1A1E28;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.js-form .form-field {
+  color: #1A1E28;
+}
+.js-form .message {
+  height: 3rem;
+  line-break: normal;
+  color: #1A1E28;
+  padding: 0.5rem;
+  resize: none;
+  width: 100%;
+}
+.js-form .submit-btn {
+  margin: 1rem;
+  width: 50%;
+  margin: 0.6rem auto;
+  padding: 0.5rem 0;
+  border: solid 1px;
+  border-radius: 1rem;
+  background: linear-gradient(217deg, #614e8b, rgba(181, 162, 162, 0) 70.71%), linear-gradient(127deg, #b85416, rgba(64, 107, 64, 0) 70.71%), linear-gradient(336deg, #2b3652, rgba(44, 44, 147, 0) 70.71%);
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px #2b3652;
+}
+
+.footer {
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  background-color: #E6D6BB;
+  bottom: 0;
+  width: 100%;
+  padding: 0.625rem;
+}
+.footer .footer__text {
+  color: #262B3A;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    position: fixed;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-image: url("../assets/icons/technologies.svg");
+    background-repeat: no-repeat;
+    background-position: 99%;
+    background-size: 11rem;
+  }
+}
+
+/* Animação backgroundFill */
+@keyframes background-fill {
+  to {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(255, 192, 153, 0.3764705882));
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FBF1EB;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFC099;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #492f1d;
+}/*# sourceMappingURL=styles.css.map */
